@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>Учебник</title>
+</head>
+
+<body>
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="sidebar">
+			<div class="sidebar-title">Разделы</div>
+			<div class="main-menu">
+				<ul>
+					<li><a href="index.html">Введение</a></li>
+					<li class="sub"><a href="#">Древний египет</a>
+						<ul>
+							<li><a href="part-1-1.html">Египет - страна на берегах Нила и ее жители</a></li>
+							<li><a href="part-1-2.html">Быт древних египтян</a></li>
+							<li><a href="part-1-3.html">Религия древних египтян</a></li>
+							<li><a href="part-1-4.html">Военные походы фараонов</a></li>
+						</ul>
+					</li>
+					<li class="sub"><a href="#">Древняя греция</a>
+						<ul>
+							<li><a href="part-2-1.html">Греки и критяне</a></li>
+							<li><a href="part-2-2.html">Религия древних греков</a></li>
+							<li><a href="part-2-3.html">Древняя Спарта</a></li>
+							<li><a href="part-2-4.html">Основание греческих колоний</a></li>
+							<li><a href="part-2-5.html">Олимпийские игры в древности</a></li>
+						</ul>
+					</li>
+					<li class="sub"><a href="#">Древний Китай</a>
+						<ul>
+							<li><a href="part-3-1.html">Природа и люди древнего Китая</a></li>
+							<li><a href="part-3-2.html">Культура древнего Китая</a></li>
+						</ul>
+					</li>
+					<li class="sub"><a href="#">Древняя индия</a>
+						<ul>
+							<li><a href="part-4-1.html">Цивилизация древней Индии</a></li>
+							<li><a href="part-4-2.html">Местоположение и природа Древней Индии</a></li>
+							<li><a href="part-4-3.html">Древнейшие города Индии</a></li>
+							<li><a href="part-4-4.html">Вторжение ариев и образование единого Индийского государства</a></li>
+							<li><a href="part-4-5.html">Религия Древней Индии</a></li>
+							<li><a href="part-4-6.html">Древнеиндийская литература и развитие научных знаний</a></li>
+						</ul>
+					</li>
+					<li><a href="dictionary.html">Словарь</a></li>
+					<li><a href="tests.html">Проверь себя</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="col-12 main-content">
+			<div class="container">
+				<h1>Проверь себя</h1>
+				<div class="accordion">
+					<div class="accordion-item">
+							<a href="#" class="heading">
+									<div class="icon"></div>
+									<div class="title">Древний Египет</div>
+							</a>
+
+							<div class="content">
+								<div class="quest">
+									<div class="quest-title">Египет был объединен</div>
+									<label for="q-1-1-1"><input type="radio" id="q-1-1-1" name="quest-1-1" value="1">1) царем Южного Египта 2 тысячи лет до н.э. </label><br>
+									<label for="q-1-1-2"><input type="radio" id="q-1-1-2" name="quest-1-1" value="2">2) царем Северного Египта 3 тысячи лет до н.э.</label> <br>
+									<label for="q-1-1-3"><input type="radio" id="q-1-1-3" name="quest-1-1" value="3">3) царем Южного Египта около 3 тысяч лет до н.э.</label>
+									<div class="quest-1-1-result"><input type="button" value="Ответить" class="btn" onclick="questTypeOne('quest-1-1',2)"> </div>
+								</div>
+
+								<div class="quest">
+									<div class="quest-title">Фараон, вельможи, писцы, воины, стражники – это:</div>
+									<label for="q-1-2-1"><input type="radio" id="q-1-2-1" name="quest-1-2" value="1">1) люди, из которых состояло все население Египта</label><br>
+									<label for="q-1-2-2"><input type="radio" id="q-1-2-2" name="quest-1-2" value="2">2) люди, которым подчинялись простые египтяне</label> <br>
+									<label for="q-1-2-3"><input type="radio" id="q-1-2-3" name="quest-1-2" value="3">3) люди, которые платили налоги в казну</label>
+									<input type="button" value="Ответить" class="btn" onclick="questTypeOne('quest-1-2',2)"> <span class="quest-1-2-result"></span>
+								</div>
+
+								<div class="quest">
+									<div class="quest-title">
+										<i>Укажите неверный ответ:</i><br>
+										Рассказывая об орошении полей в Древнем Египте, мы используем слова:</div>
+									<label for="q-1-3-1"><input type="radio" id="q-1-3-1" name="quest-1-3" value="1">1) каналы</label><br>
+									<label for="q-1-3-2"><input type="radio" id="q-1-3-2" name="quest-1-3" value="2">2) земляные насыпи</label> <br>
+									<label for="q-1-3-3"><input type="radio" id="q-1-3-3" name="quest-1-3" value="3">3) шадуфы</label> <br>
+									<label for="q-1-3-4"><input type="radio" id="q-1-3-4" name="quest-1-3" value="4">4) амулеты</label>
+									<input type="button" value="Ответить" class="btn" onclick="questTypeOne('quest-1-3',3)"> <span class="quest-1-3-result"></span>
+								</div>
+
+								<div class="quest">
+									<div class="quest-title">Что является признаком государства?</div>
+									<label for="q-1-4-1"><input type="radio" id="q-1-4-1" name="quest-1-4" value="1">1) выборы старейшины </label><br>
+									<label for="q-1-4-2"><input type="radio" id="q-1-4-2" name="quest-1-4" value="2">2) образование родовых общин</label> <br>
+									<label for="q-1-4-3"><input type="radio" id="q-1-4-3" name="quest-1-4" value="3">3) наличие религиозных верований</label> <br>
+									<label for="q-1-4-4"><input type="radio" id="q-1-4-4" name="quest-1-4" value="4">4) наличие определенной территории и границ</label>
+									<input type="button" value="Ответить" class="btn" onclick="questTypeOne('quest-1-4',4)"> <span class="quest-1-4-result"></span>
+								</div>
+
+								<div class="quest">
+									<div class="quest-title">Развитие астрономии в Египте и разлив Нила – что связывает эти понятия?</div>
+									<label for="q-1-5-1"><input type="radio" id="q-1-5-1" name="quest-1-5" value="1">1) эти явления никак не связаны </label><br>
+									<label for="q-1-5-2"><input type="radio" id="q-1-5-2" name="quest-1-5" value="2">2) наблюдения за небесными светилами позволили установить взаимосвязь между их расположением и разливами Нила</label> <br>
+									<label for="q-1-5-3"><input type="radio" id="q-1-5-3" name="quest-1-5" value="3">3) разливы Нила затапливали хранилища с записями движения небесных светил</label>
+									<input type="button" value="Ответить" class="btn" onclick="questTypeOne('quest-1-5',1)"> <span class="quest-1-5-result"></span>
+								</div>
+
+								<div class="quest">
+									<div class="quest-title">Каковы были результаты военных походов египетских фараонов? Укажите два верных ответа их пяти предложенных.</div>
+									<label for="q-1-6-1"><input type="checkbox" id="q-1-6-1" name="quest-1-6" value="1">1) обеднение крестьян</label><br>
+									<label for="q-1-6-2"><input type="checkbox" id="q-1-6-2" name="quest-1-6" value="2">2) увеличение числа рабов</label> <br>
+									<label for="q-1-6-3"><input type="checkbox" id="q-1-6-3" name="quest-1-6" value="3">3) ослабление власти фараонов</label> <br>
+									<label for="q-1-6-4"><input type="checkbox" id="q-1-6-4" name="quest-1-6" value="4">4) завоевание всего побережья Средиземного моря</label> <br>
+									<label for="q-1-6-5"><input type="checkbox" id="q-1-6-5" name="quest-1-6" value="5">5) уменьшение территории Египетского государства</label>
+									<input type="button" value="Ответить" class="btn" onclick="questTypeTwo('quest-1-6',1,2)"> <span class="quest-1-6-result"></span>
+								</div>
+							</div>
+					</div>
+
+					<div class="accordion-item">
+							<a href="#" class="heading">
+									<div class="icon"></div>
+									<div class="title">Древняя Греция</div>
+							</a>
+
+							<div class="content">
+								<div class="quest">
+									<div class="quest-title">На склонах гор древние греки выращивали:</div>
+									<label for="q-2-1-1"><input type="radio" id="q-2-1-1" name="quest-2-1" value="1">1) виноград и оливки;</label><br>
+									<label for="q-2-1-2"><input type="radio" id="q-2-1-2" name="quest-2-1" value="2">2) финики и инжир;</label> <br>
+									<label for="q-2-1-3"><input type="radio" id="q-2-1-3" name="quest-2-1" value="3">3) рис и чай;</label> <br>
+									<label for="q-2-1-4"><input type="radio" id="q-2-1-4" name="quest-2-1" value="4">4) фракийцы.</label>
+									<input type="button" value="Ответить" class="btn" onclick="questTypeOne('quest-2-1',2)"> <span class="quest-2-1-result"></span>
+								</div>
+
+								<div class="quest">
+									<div class="quest-title">Как именовали себя жители древней Греции:</div>
+									<label for="q-2-2-1"><input type="radio" id="q-2-2-1" name="quest-2-2" value="1">1) греки;</label><br>
+									<label for="q-2-2-2"><input type="radio" id="q-2-2-2" name="quest-2-2" value="2">2) эллины;</label> <br>
+									<label for="q-2-2-3"><input type="radio" id="q-2-2-3" name="quest-2-2" value="3">3) метеки;</label> <br>
+									<label for="q-2-2-4"><input type="radio" id="q-2-2-4" name="quest-2-2" value="4">4) фракийцы.</label>
+									<input type="button" value="Ответить" class="btn" onclick="questTypeOne('quest-2-2',2)"> <span class="quest-2-2-result"></span>
+								</div>
+
+								<div class="quest">
+									<div class="quest-title">Виновником развязывания Троянской войны, согласно поэме Гомера «Илиада», стал сын царя Приама:</div>
+									<label for="q-2-3-1"><input type="radio" id="q-2-3-1" name="quest-2-3" value="1">1) Патрокл;</label><br>
+									<label for="q-2-3-2"><input type="radio" id="q-2-3-2" name="quest-2-3" value="2">2) Гектор; </label> <br>
+									<label for="q-2-3-3"><input type="radio" id="q-2-3-3" name="quest-2-3" value="3">3) Парис;</label> <br>
+									<label for="q-2-3-4"><input type="radio" id="q-2-3-4" name="quest-2-3" value="4">4) Телемак.</label>
+									<input type="button" value="Ответить" class="btn" onclick="questTypeOne('quest-2-3',3)"> <span class="quest-2-3-result"></span>
+								</div>
+
+								<div class="quest">
+									<div class="quest-title">В какой степени родства находятся Посейдон, Зевс, Аид.</div>
+									<label for="q-2-4-1"><input type="radio" id="q-2-4-1" name="quest-2-4" value="1">1) родные братья;</label><br>
+									<label for="q-2-4-2"><input type="radio" id="q-2-4-2" name="quest-2-4" value="2">2) кумовья;</label> <br>
+									<label for="q-2-4-3"><input type="radio" id="q-2-4-3" name="quest-2-4" value="3">3) двоюродные братья;</label> <br>
+									<label for="q-2-4-4"><input type="radio" id="q-2-4-4" name="quest-2-4" value="4">4) отец и сыновья.</label>
+									<input type="button" value="Ответить" class="btn" onclick="questTypeOne('quest-2-4',4)"> <span class="quest-2-4-result"></span>
+								</div>
+
+								<div class="quest">
+									<div class="quest-title">Посланником Зевса называли птицу:</div>
+									<label for="q-2-6-1"><input type="radio" id="q-2-6-1" name="quest-2-6" value="1">1) сокол;</label><br>
+									<label for="q-2-6-2"><input type="radio" id="q-2-6-2" name="quest-2-6" value="2">2) орел;</label> <br>
+									<label for="q-2-6-3"><input type="radio" id="q-2-6-3" name="quest-2-6" value="3">3) павлин;</label> <br>
+									<label for="q-2-6-4"><input type="radio" id="q-2-6-4" name="quest-2-6" value="4">4) ворон.</label>
+									<input type="button" value="Ответить" class="btn" onclick="questTypeOne('quest-2-6',1)"> <span class="quest-2-6-result"></span>
+								</div>
+
+								<div class="quest">
+									<div class="quest-title">Кто построил на Олимпе золотой дворец для богов:</div>
+									<label for="q-2-7-1"><input type="radio" id="q-2-7-1" name="quest-2-7" value="1">1) Арес;</label><br>
+									<label for="q-2-7-2"><input type="radio" id="q-2-7-2" name="quest-2-7" value="2">2) Аполлон;</label> <br>
+									<label for="q-2-7-3"><input type="radio" id="q-2-7-3" name="quest-2-7" value="3">3) Гефест;</label> <br>
+									<label for="q-2-7-4"><input type="radio" id="q-2-7-4" name="quest-2-7" value="4">4) Дионис.</label>
+									<input type="button" value="Ответить" class="btn" onclick="questTypeOne('quest-2-7',1)"> <span class="quest-2-7-result"></span>
+								</div>
+
+								<div class="quest">
+									<div class="quest-title">Кого из богов сопровождали музы:</div>
+									<label for="q-2-8-1"><input type="radio" id="q-2-8-1" name="quest-2-8" value="1">1) Деметра;</label><br>
+									<label for="q-2-8-2"><input type="radio" id="q-2-8-2" name="quest-2-8" value="2">2) Аполлон;</label> <br>
+									<label for="q-2-8-3"><input type="radio" id="q-2-8-3" name="quest-2-8" value="3">3) Аид;</label> <br>
+									<label for="q-2-8-4"><input type="radio" id="q-2-8-4" name="quest-2-8" value="4">4) Посейдон.</label>
+									<input type="button" value="Ответить" class="btn" onclick="questTypeOne('quest-2-8',1)"> <span class="quest-2-8-result"></span>
+								</div>
+
+								<div class="quest">
+									<div class="quest-title">Какую богиню называли «воительница»:</div>
+									<label for="q-2-9-1"><input type="radio" id="q-2-9-1" name="quest-2-9" value="1">1) Афродита;</label><br>
+									<label for="q-2-9-2"><input type="radio" id="q-2-9-2" name="quest-2-9" value="2">2) Афина;</label> <br>
+									<label for="q-2-9-3"><input type="radio" id="q-2-9-3" name="quest-2-9" value="3">3) Гера;</label> <br>
+									<label for="q-2-9-4"><input type="radio" id="q-2-9-4" name="quest-2-9" value="4">4) Деметра.</label>
+									<input type="button" value="Ответить" class="btn" onclick="questTypeOne('quest-2-9',1)"> <span class="quest-2-9-result"></span>
+								</div>
+
+								<div class="quest">
+									<div class="quest-title">Как называли бога войны в Греции:</div>
+									<label for="q-2-10-1"><input type="radio" id="q-2-10-1" name="quest-2-10" value="1">1) Арес;</label><br>
+									<label for="q-2-10-2"><input type="radio" id="q-2-10-2" name="quest-2-10" value="2">2) Гефест;</label> <br>
+									<label for="q-2-10-3"><input type="radio" id="q-2-10-3" name="quest-2-10" value="3">3) Гермес;</label> <br>
+									<label for="q-2-10-4"><input type="radio" id="q-2-10-4" name="quest-2-10" value="4">4) Дионис.</label>
+									<input type="button" value="Ответить" class="btn" onclick="questTypeOne('quest-2-10',1)"> <span class="quest-2-10-result"></span>
+								</div>
+
+								<div class="quest">
+									<div class="quest-title">Определите дату Марафонской битвы.</div>
+									<label for="q-2-11-1"><input type="radio" id="q-2-11-1" name="quest-2-11" value="1">1) 480 г. до н.э.; </label><br>
+									<label for="q-2-11-2"><input type="radio" id="q-2-11-2" name="quest-2-11" value="2">2) 443 г. до н.э.;</label> <br>
+									<label for="q-2-11-3"><input type="radio" id="q-2-11-3" name="quest-2-11" value="3">3) 490 г. до н.э.;</label> <br>
+									<label for="q-2-11-4"><input type="radio" id="q-2-11-4" name="quest-2-11" value="4">4) 479 г. до н.э.</label>
+									<input type="button" value="Ответить" class="btn" onclick="questTypeOne('quest-2-11',1)"> <span class="quest-2-11-result"></span>
+								</div>
+
+								<div class="quest">
+									<div class="quest-title">Место для сооружения храмов в Афинах называлось:</div>
+									<label for="q-2-12-1"><input type="radio" id="q-2-12-1" name="quest-2-12" value="1">1) акрополь;</label><br>
+									<label for="q-2-12-2"><input type="radio" id="q-2-12-2" name="quest-2-12" value="2">2) агора; </label> <br>
+									<label for="q-2-12-3"><input type="radio" id="q-2-12-3" name="quest-2-12" value="3">3) керамик;</label> <br>
+									<label for="q-2-12-4"><input type="radio" id="q-2-12-4" name="quest-2-12" value="4">4) форум.</label>
+									<input type="button" value="Ответить" class="btn" onclick="questTypeOne('quest-2-12',1)"> <span class="quest-2-12-result"></span>
+								</div>
+
+								<div class="quest">
+									<div class="quest-title">Известный древнегреческий историк, друг Перикла и «Отец истории»:</div>
+									<label for="q-2-13-1"><input type="radio" id="q-2-13-1" name="quest-2-13" value="1">1) Фидий;</label><br>
+									<label for="q-2-13-2"><input type="radio" id="q-2-13-2" name="quest-2-13" value="2">2) Геродот;</label> <br>
+									<label for="q-2-13-3"><input type="radio" id="q-2-13-3" name="quest-2-13" value="3">3) Сократ;</label> <br>
+									<label for="q-2-13-4"><input type="radio" id="q-2-13-4" name="quest-2-13" value="4">4) Гомер</label>
+									<input type="button" value="Ответить" class="btn" onclick="questTypeOne('quest-2-13',1)"> <span class="quest-2-13-result"></span>
+								</div>
+
+								<div class="quest">
+									<div class="quest-title">Триера- это:</div>
+									<label for="q-2-14-1"><input type="radio" id="q-2-14-1" name="quest-2-14" value="1">1) площадка для тренировок;</label><br>
+									<label for="q-2-14-2"><input type="radio" id="q-2-14-2" name="quest-2-14" value="2">2) лёгкий маневренный корабль греков;</label> <br>
+									<label for="q-2-14-3"><input type="radio" id="q-2-14-3" name="quest-2-14" value="3">3) школа для борьбы;</label> <br>
+									<label for="q-2-14-4"><input type="radio" id="q-2-14-4" name="quest-2-14" value="4">4) форма построения  македонских солдат.</label>
+									<input type="button" value="Ответить" class="btn" onclick="questTypeOne('quest-2-14',1)"> <span class="quest-2-14-result"></span>
+								</div>
+
+								<div class="quest">
+									<div class="quest-title">Пелопонес – это</div>
+									<label for="q-2-15-1"><input type="radio" id="q-2-15-1" name="quest-2-15" value="1">1) Северная часть Греции;</label><br>
+									<label for="q-2-15-2"><input type="radio" id="q-2-15-2" name="quest-2-15" value="2">2) Средняя часть Греции;</label> <br>
+									<label for="q-2-15-3"><input type="radio" id="q-2-15-3" name="quest-2-15" value="3">3) Южная часть Греции.</label>
+									<input type="button" value="Ответить" class="btn" onclick="questTypeOne('quest-2-15',1)"> <span class="quest-2-15-result"></span>
+								</div>
+
+								<div class="quest">
+									<div class="quest-title">Кто из первых стратегов 15 лет занимал эту должность в Афинах?</div>
+									<label for="q-2-16-1"><input type="radio" id="q-2-16-1" name="quest-2-16" value="1">1) Фемистокл;</label><br>
+									<label for="q-2-16-2"><input type="radio" id="q-2-16-2" name="quest-2-16" value="2">2) Перикл; </label> <br>
+									<label for="q-2-16-3"><input type="radio" id="q-2-16-3" name="quest-2-16" value="3">3) Солон;</label> <br>
+									<label for="q-2-16-4"><input type="radio" id="q-2-16-4" name="quest-2-16" value="4">4) Драконт.</label>
+									<input type="button" value="Ответить" class="btn" onclick="questTypeOne('quest-2-16',1)"> <span class="quest-2-16-result"></span>
+								</div>
+							</div>
+					</div>
+
+					<div class="accordion-item">
+							<a href="#" class="heading">
+									<div class="icon"></div>
+									<div class="title">Индия и Китай в древности</div>
+							</a>
+
+							<div class="content">
+								<div class="quest">
+									<div class="quest-title">Китай находится в:</div>
+									<label for="q-3-1-1"><input type="radio" id="q-3-1-1" name="quest-3-1" value="1">1) Западной Азии;</label><br>
+									<label for="q-3-1-2"><input type="radio" id="q-3-1-2" name="quest-3-1" value="2">2) Восточной Азии;</label> <br>
+									<label for="q-3-1-3"><input type="radio" id="q-3-1-3" name="quest-3-1" value="3">3) Западной Европе;</label> <br>
+									<label for="q-3-1-4"><input type="radio" id="q-3-1-4" name="quest-3-1" value="4">4) Северной Америке.</label>
+									<input type="button" value="Ответить" class="btn" onclick="questTypeOne('quest-3-1',2)"> <span class="quest-3-1-result"></span>
+								</div>
+
+								<div class="quest">
+									<div class="quest-title">В древности индийцы селились на берегах рек:</div>
+									<label for="q-3-2-1"><input type="radio" id="q-3-2-1" name="quest-3-2" value="1">1) Инд и Ганг;</label><br>
+									<label for="q-3-2-2"><input type="radio" id="q-3-2-2" name="quest-3-2" value="2">2) Инд и Евфрат;</label> <br>
+									<label for="q-3-2-3"><input type="radio" id="q-3-2-3" name="quest-3-2" value="3">3) Ганг и Тигр;</label> <br>
+									<label for="q-3-2-4"><input type="radio" id="q-3-2-4" name="quest-3-2" value="4">4) Янцзы и Хуанхэ.</label>
+									<input type="button" value="Ответить" class="btn" onclick="questTypeOne('quest-3-2',2)"> <span class="quest-3-2-result"></span>
+								</div>
+
+								<div class="quest">
+									<div class="quest-title">В Индии долину Ганга покрывали густые, труднопроходимы леса:</div>
+									<label for="q-3-3-1"><input type="radio" id="q-3-3-1" name="quest-3-3" value="1">1) тайга;</label><br>
+									<label for="q-3-3-2"><input type="radio" id="q-3-3-2" name="quest-3-3" value="2">2) роща;</label> <br>
+									<label for="q-3-3-3"><input type="radio" id="q-3-3-3" name="quest-3-3" value="3">3) джунгли;</label> <br>
+									<label for="q-3-3-4"><input type="radio" id="q-3-3-4" name="quest-3-3" value="4">4) сельва</label>
+									<input type="button" value="Ответить" class="btn" onclick="questTypeOne('quest-3-3',3)"> <span class="quest-3-3-result"></span>
+								</div>
+
+								<div class="quest">
+									<div class="quest-title">В 3-м веке до н.э. первым властителем объединенного был:</div>
+									<label for="q-3-4-1"><input type="radio" id="q-3-4-1" name="quest-3-4" value="1">1) Ашшурбанапал;</label><br>
+									<label for="q-3-4-2"><input type="radio" id="q-3-4-2" name="quest-3-4" value="2">2) Конфуций;</label> <br>
+									<label for="q-3-4-3"><input type="radio" id="q-3-4-3" name="quest-3-4" value="3">3) Кир;</label> <br>
+									<label for="q-3-4-4"><input type="radio" id="q-3-4-4" name="quest-3-4" value="4">4) Цинь Шихуан.</label>
+									<input type="button" value="Ответить" class="btn" onclick="questTypeOne('quest-3-4',4)"> <span class="quest-3-4-result"></span>
+								</div>
+
+								<div class="quest">
+									<div class="quest-title">Самыми мудрыми и почтенными в Индии считались:</div>
+									<label for="q-3-6-1"><input type="radio" id="q-3-6-1" name="quest-3-6" value="1">1) брахманы;</label><br>
+									<label for="q-3-6-2"><input type="radio" id="q-3-6-2" name="quest-3-6" value="2">2) воины;</label> <br>
+									<label for="q-3-6-3"><input type="radio" id="q-3-6-3" name="quest-3-6" value="3">3) цари;</label> <br>
+									<label for="q-3-6-4"><input type="radio" id="q-3-6-4" name="quest-3-6" value="4">4) писцы.</label>
+									<input type="button" value="Ответить" class="btn" onclick="questTypeOne('quest-3-6',1)"> <span class="quest-3-6-result"></span>
+								</div>
+
+								<div class="quest">
+									<div class="quest-title">Некоторых богов индийцы представляли в виде диких животных:</div>
+									<label for="q-3-7-1"><input type="radio" id="q-3-7-1" name="quest-3-7" value="1">1) свирепого льва;</label><br>
+									<label for="q-3-7-2"><input type="radio" id="q-3-7-2" name="quest-3-7" value="2">2) добродушной кошки;</label> <br>
+									<label for="q-3-7-3"><input type="radio" id="q-3-7-3" name="quest-3-7" value="3">3) хитрой обезьяны;</label> <br>
+									<label for="q-3-7-4"><input type="radio" id="q-3-7-4" name="quest-3-7" value="4">4) ловкого леопарда.</label>
+									<input type="button" value="Ответить" class="btn" onclick="questTypeOne('quest-3-7',1)"> <span class="quest-3-7-result"></span>
+								</div>
+
+								<div class="quest">
+									<div class="quest-title">В Индии божественной кормилицей, матерью называли:</div>
+									<label for="q-3-8-1"><input type="radio" id="q-3-8-1" name="quest-3-8" value="1">1) корову;</label><br>
+									<label for="q-3-8-2"><input type="radio" id="q-3-8-2" name="quest-3-8" value="2">2) зебру;</label> <br>
+									<label for="q-3-8-3"><input type="radio" id="q-3-8-3" name="quest-3-8" value="3">3) антилопу;</label> <br>
+									<label for="q-3-8-4"><input type="radio" id="q-3-8-4" name="quest-3-8" value="4">4) обезьяну.</label>
+									<input type="button" value="Ответить" class="btn" onclick="questTypeOne('quest-3-8',1)"> <span class="quest-3-8-result"></span>
+								</div>
+
+								<div class="quest">
+									<div class="quest-title">По мнению Конфуция, ученый не дорожит:</div>
+									<label for="q-3-9-1"><input type="radio" id="q-3-9-1" name="quest-3-9" value="1">1) золотом;</label><br>
+									<label for="q-3-9-2"><input type="radio" id="q-3-9-2" name="quest-3-9" value="2">2) верностью;</label> <br>
+									<label for="q-3-9-3"><input type="radio" id="q-3-9-3" name="quest-3-9" value="3">3) драгоценными камнями;</label> <br>
+									<label for="q-3-9-4"><input type="radio" id="q-3-9-4" name="quest-3-9" value="4">4) мудростью.</label>
+									<input type="button" value="Ответить" class="btn" onclick="questTypeOne('quest-3-9',1)"> <span class="quest-3-9-result"></span>
+								</div>
+
+								<div class="quest">
+									<div class="quest-title">Образованными людьми в Китае считали тех, кто писал:</div>
+									<label for="q-3-10-1"><input type="radio" id="q-3-10-1" name="quest-3-10" value="1">1) грамотно;</label><br>
+									<label for="q-3-10-2"><input type="radio" id="q-3-10-2" name="quest-3-10" value="2">2) красиво;</label> <br>
+									<label for="q-3-10-3"><input type="radio" id="q-3-10-3" name="quest-3-10" value="3">3) грамотно и красиво;</label> <br>
+									<label for="q-3-10-4"><input type="radio" id="q-3-10-4" name="quest-3-10" value="4">4) разборчивым почерком.</label>
+									<input type="button" value="Ответить" class="btn" onclick="questTypeOne('quest-3-10',1)"> <span class="quest-3-10-result"></span>
+								</div>
+
+								<div class="quest">
+									<div class="quest-title">«Благородный человек винит себя, а ничтожный — других», — говорил:</div>
+									<label for="q-3-11-1"><input type="radio" id="q-3-11-1" name="quest-3-11" value="1">1) Будда;</label><br>
+									<label for="q-3-11-2"><input type="radio" id="q-3-11-2" name="quest-3-11" value="2">2) Конфуций;</label> <br>
+									<label for="q-3-11-3"><input type="radio" id="q-3-11-3" name="quest-3-11" value="3">3) Соломон;</label> <br>
+									<label for="q-3-11-4"><input type="radio" id="q-3-11-4" name="quest-3-11" value="4">4) Моисей.</label>
+									<input type="button" value="Ответить" class="btn" onclick="questTypeOne('quest-3-11',1)"> <span class="quest-3-11-result"></span>
+								</div>
+
+								<div class="quest">
+									<div class="quest-title">Тонкие и воздушные шелковые ткани научились изготавливать в:</div>
+									<label for="q-3-12-1"><input type="radio" id="q-3-12-1" name="quest-3-12" value="1">1) Египте;</label><br>
+									<label for="q-3-12-2"><input type="radio" id="q-3-12-2" name="quest-3-12" value="2">2) Китае;</label> <br>
+									<label for="q-3-12-3"><input type="radio" id="q-3-12-3" name="quest-3-12" value="3">3) Индии;</label> <br>
+									<label for="q-3-12-4"><input type="radio" id="q-3-12-4" name="quest-3-12" value="4">4) Ассирии.</label>
+									<input type="button" value="Ответить" class="btn" onclick="questTypeOne('quest-3-12',1)"> <span class="quest-3-12-result"></span>
+								</div>
+
+								<div class="quest">
+									<div class="quest-title">Торговцы разных стран мира везли из Китая:</div>
+									<label for="q-3-13-1"><input type="radio" id="q-3-13-1" name="quest-3-13" value="1">1) сахар;</label><br>
+									<label for="q-3-13-2"><input type="radio" id="q-3-13-2" name="quest-3-13" value="2">2) чайный лист;</label> <br>
+									<label for="q-3-13-3"><input type="radio" id="q-3-13-3" name="quest-3-13" value="3">3) папирус;</label> <br>
+									<label for="q-3-13-4"><input type="radio" id="q-3-13-4" name="quest-3-13" value="4">4) кофейные зерна.</label>
+									<input type="button" value="Ответить" class="btn" onclick="questTypeOne('quest-3-13',1)"> <span class="quest-3-13-result"></span>
+								</div>
+							</div>
+					</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="js/scripts.min.js"></script>
+</body>
+
+</html>
