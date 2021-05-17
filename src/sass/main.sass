@@ -1,228 +1,108 @@
 @import "vars"
 @import "fonts"
+@import "main.scss"
 @import "libs"
 
-/*==========  user style  ==========*/
+/*==========	user style	==========*/
 body
-	color: #333
 
-*:focus, *:active, *:link, *:visited
-	outline: none
+a
+	transition: .3s
+	color: inherit
+	&:link
+		outline: none 0
+	&:visited
+		outline: none 0
+	&:hover
+		text-decoration: none
+		color: inherit
+	&:active
+		outline: none 0
 
-a:focus, a:active, a:link, a:visited
-	text-decoration: none
-	outline: none
+ul
+	margin: 0
+	padding: 0
+	list-style: none
 
-h1,h2,h3,h4
-	text-align: center
-	margin: 20px 0
-
-.sidebar
-	padding-top: 30px
-	background: $bg-color-1
-	position: fixed
-	top: 0
-	bottom: 0
-	left: 0
-	width: 299px
-	border-right: 1px solid $border-color-1
-	z-index: 999
-
-.main-content
-	padding-top: 30px
-	padding-left: 350px
-	padding-bottom: 70px
-	.container
-		padding-right: 100px
-
-.sidebar-title
-	text-transform: uppercase
-	font-weight: bold
-	text-align: center
-	font-size: 20px
-	margin-bottom: 30px
-
-.main-menu
-	ul
-		list-style: none
-		padding: 0
-		margin: 0
-		a
-			color: #333
-			display: block
-			padding: 10px 0px
+.body
+	background-color: #f7f7f7
+	color: #262626
+	h1 
+		font-family: 'Oranienbaum', serif
+		font-size: 38px
+.main
+	padding: 50px 0
+	.title
+		position: relative
+		&::before
+			position: absolute
+			content: ""
+			width: calc(100% - 15px)
+			height: 5px
+			background: #262626
+			bottom: -10px
+			left: 0
+			margin: 0px 15px
+	.content
+		padding: 30px 15px
+	.content_image
+		width: 100%
+		margin-top: 30px
+		padding-right: 0
+		overflow: hidden
+		position: relative
+		height: 100%
+		&:hover 
+			img
+				filter: grayscale(0)
+		img
+			width: 100%
+			filter: grayscale(100%)
+			transition: .2s
+		&__description
+			background: rgba(#000, .8)
+			color: #fff
+			position: absolute
+			width: calc(100% - 15px)
+			bottom: 0
+			left: 15px
+			font-family: 'Oranienbaum', serif
 			text-align: center
-			position: relative
+			padding: 15px
+
+.header
+	background: #fff
+	.container
+		height: 75px
+		display: flex
+		align-items: center
+		.logo
+			font-family: 'Oranienbaum', serif
+			font-size: 42px
+			font-weight: bold
+			margin: 0
 			transition: .2s
 			&:hover
-				color: #fff
-				text-decoration: none
-				&:after
-					height: 100%
-			&::after
-				content: ""
-				display: block
-				position: absolute
-				top: 0
-				left: 0
-				height: 0
-				width: 100%
-				background: #888
-				z-index: -1
-				transition: .3s
-		.sub
-			ul
-				list-style: none
-				padding: 0
-				background: darken($bg-color-1, 5%)
-				height: 0
-				overflow: hidden
-		a.active
-			background: #888
-			color: #fff
-.img-item
-	text-align: center
-	margin: 30px 0
-	img
-		padding: 10px 15px
+				transform: scale(1.1)
+		nav
+			margin-left: auto
+			.nav
+				display: flex
+				align-items: center
+				&__item
+					&__link
+						cursor: pointer
+						padding: 10px 15px
+						text-transform: uppercase
+						font-weight: bold
+						font-size: 18px
+						opacity: .7
+						&:hover
+							background: #f0f0f0
+							opacity: 1
+						&.active
+							opacity: 1
 
-.alphabet
-	text-align: center
-	font-size: 18px
-	a
-		color: #999
-		transition: .2s
-		padding: 0px 5px
-		font-weight: bold
-		position: relative
-		&::after
-			display: block
-			content: ""
-			position: absolute
-			width: 100%
-			height: 1px
-			background: #222
-			left: 0
-			opacity: 0
-			transition: .2s
-		&:hover
-			color: #222
-			&:after
-				opacity: 1
-
-.accordion
-	width: 100%
-	max-width: 75rem
-	margin: 0 auto
-	padding: 50px 0
-
-.accordion-item 
-	position: relative
-
-.accordion-item.active .heading 
-	color: #4b827a
-
-.accordion-item.active .icon 
-	background: #fefefe
-
-.accordion-item.active .icon::before 
-	background: #4b827a
-
-.accordion-item.active .icon::after 
-	width: 0
-
-.accordion-item .heading
-	display: block
-	text-transform: uppercase
-	text-decoration: none
-	color: #4b827a
-	font-weight: 700
-	font-size: 1rem
-	position: relative
-	padding: 1.5rem 1.5rem 1.5rem 4rem
-	transition: 0.3s ease-in-out
-
-.accordion-item .heading:hover 
-	color: #8bc2ba
-
-.accordion-item .heading:hover .icon::before, .accordion-item .heading:hover .icon::after 
-	background: #8bc2ba
-
-.accordion-item .icon 
-	display: block
-	position: absolute
-	top: 50%
-	left: 0
-	width: 3rem
-	height: 3rem
-	border: 2px solid #fefefe
-	border-radius: 3px
-	transform: translateY(-50%)
-
-.accordion-item .icon::before, .accordion-item .icon::after 
-	content: ""
-	width: 1.25rem
-	height: 0.25rem
-	background: #4b827a
-	position: absolute
-	border-radius: 3px
-	left: 50%
-	top: 50%
-	transition: 0.3s ease-in-out
-	transform: translate(-50%, -50%)
-
-.accordion-item .icon::after 
-	transform: translate(-50%, -50%) rotate(90deg)
-	z-index: -1
-
-.accordion-item .content 
-	display: none
-
-.accordion-item .content p
-	margin-top: 0
-
-.btn
-	display: block
-	padding: 5px 0
-	background: $bg-color-1
-	width: 100px
-	text-align: center
-	border-radius: 3px
-	transition: .2s
-	border: none
-	margin-bottom: 10px
-	&:hover
-		cursor: pointer
-		color: #fff
-		background: darken($bg-color-1,20%)
-
-input[type=radio],
-input[type=checkbox]
-	margin-left: 20px
-	margin-right: 10px
-
-.quest
-	margin-bottom: 30px
-	margin-left: 70px
-	&-title
-		font-weight: bold
-		margin-bottom: 10px
-		color: #444
-
-.msg-ok
-	padding: 5px 15px
-	border-radius: 3px
-	background: rgba($color-ok,.1)
-	color: darken($color-ok, 15%)
-	border: 1px solid $color-ok
-
-.msg-er
-	padding: 5px 15px
-	border-radius: 3px
-	background: rgba($color-er,.1)
-	color: darken($color-er, 15%)
-	border: 1px solid $color-er
-
-/*==========  user style  ==========*/
+/*==========	user style	==========*/
 
 @import "media" // Always at the end
