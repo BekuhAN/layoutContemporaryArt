@@ -11,13 +11,19 @@ a
 	color: inherit
 	&:link
 		outline: none 0
+		text-decoration: none
+		color: inherit
 	&:visited
 		outline: none 0
+		text-decoration: none
+		color: inherit
 	&:hover
 		text-decoration: none
 		color: inherit
 	&:active
 		outline: none 0
+		text-decoration: none
+		color: inherit
 
 ul
 	margin: 0
@@ -69,6 +75,11 @@ ul
 			font-family: 'Oranienbaum', serif
 			text-align: center
 			padding: 15px
+	.gallery
+		margin-top: 30px
+		&_item
+			img
+				width: 100%
 
 .categories_page
 	.column
@@ -104,6 +115,21 @@ ul
 					font-weight: bold
 					font-family: Roboto
 
+.category_page
+	.title
+		font-size: 28px
+		&::before
+			height: 2px
+	.gallery
+		margin-top: 30px
+		&_item
+			img
+				margin-bottom: 20px
+				width: 100%
+	.description
+		margin-top: 30px
+		padding-right: 0
+
 .header
 	background: #fff
 	.container
@@ -133,6 +159,37 @@ ul
 						opacity: .7
 						&:hover
 							background: #f0f0f0
+							opacity: 1
+						&.active
+							opacity: 1
+
+.footer
+	background: #262626
+	color: #fff
+	padding: 30px 0
+	.container
+		display: flex
+		align-items: center
+		flex-direction: column
+		.title
+			font-family: 'Oranienbaum', serif
+			font-size: 24px
+			font-weight: bold
+			margin: 0 0 30px
+		nav
+			.nav
+				display: flex
+				align-items: center
+				&__item
+					&__link
+						cursor: pointer
+						padding: 10px 15px
+						text-transform: uppercase
+						font-weight: bold
+						font-size: 18px
+						opacity: .7
+						&:hover
+							background: rgba(#000, .8)
 							opacity: 1
 						&.active
 							opacity: 1

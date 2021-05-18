@@ -8113,10 +8113,14 @@ a {
 
 a:link {
   outline: none 0;
+  text-decoration: none;
+  color: inherit;
 }
 
 a:visited {
   outline: none 0;
+  text-decoration: none;
+  color: inherit;
 }
 
 a:hover {
@@ -8126,6 +8130,8 @@ a:hover {
 
 a:active {
   outline: none 0;
+  text-decoration: none;
+  color: inherit;
 }
 
 ul {
@@ -8198,6 +8204,14 @@ ul {
   padding: 15px;
 }
 
+.main .gallery {
+  margin-top: 30px;
+}
+
+.main .gallery_item img {
+  width: 100%;
+}
+
 .categories_page .column {
   padding: 10px;
 }
@@ -8242,6 +8256,28 @@ ul {
   font-size: 18px;
   font-weight: bold;
   font-family: Roboto;
+}
+
+.category_page .title {
+  font-size: 28px;
+}
+
+.category_page .title::before {
+  height: 2px;
+}
+
+.category_page .gallery {
+  margin-top: 30px;
+}
+
+.category_page .gallery_item img {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.category_page .description {
+  margin-top: 30px;
+  padding-right: 0;
 }
 
 .header {
@@ -8290,6 +8326,48 @@ ul {
 }
 
 .header .container nav .nav__item__link.active {
+  opacity: 1;
+}
+
+.footer {
+  background: #262626;
+  color: #fff;
+  padding: 30px 0;
+}
+
+.footer .container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer .container .title {
+  font-family: 'Oranienbaum', serif;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0 0 30px;
+}
+
+.footer .container nav .nav {
+  display: flex;
+  align-items: center;
+}
+
+.footer .container nav .nav__item__link {
+  cursor: pointer;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 18px;
+  opacity: .7;
+}
+
+.footer .container nav .nav__item__link:hover {
+  background: rgba(0, 0, 0, 0.8);
+  opacity: 1;
+}
+
+.footer .container nav .nav__item__link.active {
   opacity: 1;
 }
 
